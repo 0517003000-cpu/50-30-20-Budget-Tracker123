@@ -9,27 +9,27 @@
 
 <h1 contenteditable="true">Monthly Budget Tracker</h1>
 
-<div class="top">
+<div class="topInfo">
 
 <label>Name:</label>
-<span contenteditable="true" id="name"></span>
+<span contenteditable="true"></span>
 
 <label>Monthly Income:</label>
-<span contenteditable="true" id="income"></span>
+<span contenteditable="true"></span>
 
 </div>
+
 
 <div class="monthManager">
 
 <button onclick="newMonth()">+ New Month</button>
 
-<select id="monthList" onchange="loadMonth()">
-<option value="">Select Month</option>
-</select>
+<div id="months"></div>
 
 </div>
 
-<div class="calculator">
+
+<div class="calculatorLink">
 
 <a href="https://0517003000-cpu.github.io/Monthly-Budget-Calc/" target="_blank">
 Open Budget Calculator
@@ -37,13 +37,15 @@ Open Budget Calculator
 
 </div>
 
-<div class="container">
+
+<div class="tables">
+
 
 <!-- ESSENTIAL -->
-<table class="budget">
+<table class="budgetTable">
 
 <tr>
-<th colspan="2">Essential Expenses</th>
+<th colspan="2" contenteditable="true">Essential Expenses</th>
 </tr>
 
 <tr>
@@ -70,11 +72,12 @@ Open Budget Calculator
 </table>
 
 
+
 <!-- NON ESSENTIAL -->
-<table class="budget">
+<table class="budgetTable">
 
 <tr>
-<th colspan="2">Non Essential Expenses</th>
+<th colspan="2" contenteditable="true">Non Essential Expenses</th>
 </tr>
 
 <tr>
@@ -101,11 +104,12 @@ Open Budget Calculator
 </table>
 
 
+
 <!-- SAVINGS -->
-<table class="budget">
+<table class="budgetTable">
 
 <tr>
-<th colspan="2">Savings</th>
+<th colspan="2" contenteditable="true">Savings</th>
 </tr>
 
 <tr>
@@ -131,10 +135,11 @@ Open Budget Calculator
 
 </table>
 
+
 </div>
 
-<script src="script.js"></script> 
-  
+
+<script src="script.js"></script>
 
 </body>
 </html>
